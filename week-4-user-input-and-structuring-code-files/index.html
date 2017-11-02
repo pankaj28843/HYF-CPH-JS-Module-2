@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Input</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+    <fieldset>
+        <label for="carsCount">Number of cars:</label>
+        <input id="carsCount" type="number" min="10" step="1" placeholder="Enter number of cars" value="20">
+        <button class="btn btn-primary" onclick="iniatilize()">Generate Cars</button>
+    </fieldset>
+
+    <hr/>
+
+    <button class="btn btn-danger" onclick="resetFilters()">Reset Filters</button>
+
+    <fieldset>
+        <label for="makeFilterInput">Filter by Car Make:</label>
+        <input id="makeFilterInput" type="text" placeholder="Enter make of the car">
+        <button class="btn btn-secondary" onclick="applyMakeFilter()">Apply</button>
+    </fieldset>
+    <br>
+    <fieldset>
+        <label for="colorFilterInput">Filter by Car Color:</label>
+        <input id="colorFilterInput" type="text" placeholder="Enter color of the car">
+        <button class="btn btn-secondary" onclick="applyColorFilter()">Apply</button>
+    </fieldset>
+    <br>
+    <fieldset>
+        <label for="minSpeedFilterInput">Filter by Min Car Speed:</label>
+        <input id="minSpeedFilterInput" type="number" placeholder="Enter minimum speed of the car">
+        <button class="btn btn-secondary" onclick="applyMinimumSpeedFilter()">Apply</button>
+    </fieldset>
+    <br>
+    <fieldset>
+        <label for="maxSpeedFilterInput">Filter by Max Car Speed:</label>
+        <input id="maxSpeedFilterInput" type="number" placeholder="Enter maximum speed of the car">
+        <button class="btn btn-secondary" onclick="applyMaximumSpeedFilter()">Apply</button>
+    </fieldset>
+
+    <div id="main">
+
+    </div>
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="review.js"></script>
+</body>
+</html>

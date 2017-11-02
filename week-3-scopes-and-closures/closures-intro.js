@@ -29,3 +29,30 @@ console.log(add_5(20)); // 25
 let subtract_5 = createAdder(-5);
 console.log(subtract_5(20)); // 15
 console.log(subtract_5(30)); // 25
+
+
+
+
+
+
+function createWallet() {
+    let value = null;
+
+
+    return {
+        store: function (something) {
+            value = somehting;
+        },
+        get: function () {
+            return value;
+        }
+    }
+}
+
+let wallet = createWallet();
+wallet.store(25);
+wallet.get(); // 25;
+
+wallet.store('Some name');
+wallet.get(); //
+
