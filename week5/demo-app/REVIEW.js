@@ -1,5 +1,5 @@
 function fetchGithubUserDetails(username) {
-    const url = `https://api.github.com/users/${username}?page_limit=10000`;
+    const url = `https://api.github.com/users/${username}?per_page=10000`;
 
     const req = new XMLHttpRequest();
     req.addEventListener('load', function () {
