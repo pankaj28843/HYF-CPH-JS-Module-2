@@ -27,6 +27,9 @@ function fetchGithubUserDetails(username) {
 
 
 function fetchRepositories(url) {
+    const urlObj = new URL(url);
+    urlObj.searchParams.set('per_page', 10000);
+    url = urlObj.toString();
     const req = new XMLHttpRequest();
     req.addEventListener('load', function () {
         const repos = JSON.parse(this.responseText);
